@@ -1,7 +1,6 @@
 "use client"
 
 import { BriefBuilder } from "@/components/brief-builder"
-import { PackageCards } from "@/components/package-cards"
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, Clock, Users, Zap } from "lucide-react"
 import { useLanguage } from "@/hooks/use-language"
@@ -24,9 +23,6 @@ export default function HomePage() {
           <nav className="hidden md:flex items-center gap-6">
             <a href="#how-it-works" className="text-sm text-slate-600 hover:text-slate-900">
               {t.nav.howItWorks}
-            </a>
-            <a href="#packages" className="text-sm text-slate-600 hover:text-slate-900">
-              {t.nav.packages}
             </a>
             <a href="#brief-builder" className="text-sm text-slate-600 hover:text-slate-900">
               {t.nav.createBrief}
@@ -116,15 +112,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Packages Section */}
-      <section id="packages" className="container mx-auto px-4 py-16 bg-slate-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">{t.package.title}</h2>
-          <p className="text-center text-slate-600 mb-12">{t.package.subtitle}</p>
-          <PackageCards />
         </div>
       </section>
 
